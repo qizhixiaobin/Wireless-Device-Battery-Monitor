@@ -99,6 +99,7 @@ std::vector<DeviceStatus> PollAllDevices() {
     PollNiceboy(ctx);    // exact 248A:FA02 match, also before the Ajazz / Delux pollers
     PollMchoseModern(ctx);
     PollMchoseHeadset(ctx);
+    PollVgnKeyboard(ctx);  // VGN V98 Pro V4 (VID 391D, PID 2A04) on its 2.4 GHz receiver
     PollVgn(ctx);
     PollMchoseKeyboard(ctx);  // 3837:3033 receiver, before the generic fallbacks
     PollMiscMice(ctx);
